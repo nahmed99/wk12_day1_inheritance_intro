@@ -5,4 +5,9 @@ public class Student extends Person{
         super(name, cohort);
     }
 
+    // Overriding method Person.talk
+    public String talk(String language) {
+        return "I love learning " + language;
+    }
+
 }

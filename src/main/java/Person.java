@@ -1,5 +1,3 @@
-import org.junit.Test;
-
 public class Person {
 
     private String name;
@@ -25,7 +23,6 @@ public class Person {
     public void setCohort(String newCohort) {
         this.cohort = newCohort;
     }
-
 
     public String talk(String language) {
         return "I love " + language;
