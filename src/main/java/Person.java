@@ -28,7 +28,7 @@ public class Person {
 
 
     public String talk(String language) {
-        return "I like " + language;
+        return "I love " + language;
     }
 
 }

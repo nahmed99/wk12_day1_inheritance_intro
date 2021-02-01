@@ -9,7 +9,7 @@ public class InstructorTest {
 
     @Before
     public void before(){
-        instructor = new Instructor("Colin", "G6");
+        instructor = new Instructor("Colin", "G6", "Java");
     }
 
 
@@ -24,6 +24,11 @@ public class InstructorTest {
     }
 
     @Test
+    public void hasModuleTeam(){
+        assertEquals("Java", instructor.getModuleTeam());
+    }
+
+    @Test
     public void canChangeName(){
         instructor.setName("Louise");
         assertEquals("Louise", instructor.getName());
@@ -33,6 +38,13 @@ public class InstructorTest {
         instructor.setCohort("G8");
         assertEquals("G8", instructor.getCohort());
     }
+
+    @Test
+    public void canChangeModuleTeam(){
+        instructor.setModuleTeam("Python");
+        assertEquals("Python", instructor.getModuleTeam());
+    }
+
 
     @Test
     public void canTalk(){

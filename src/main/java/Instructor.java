@@ -1,30 +1,21 @@
-public class Instructor {
+public class Instructor extends Person {
 
-    private String name;
-    private String cohort;
+    private String moduleTeam;
 
-    public Instructor(String name, String cohort) {
-        this.name = name;
-        this.cohort = cohort;
+    public Instructor(String name, String cohort, String moduleTeam) {
+        // Pass parameters to parent class.
+        super(name, cohort);
+
+        this.moduleTeam = moduleTeam;
     }
 
-    public String getName() {
-        return name;
+
+    public String getModuleTeam() {
+        return this.moduleTeam;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setModuleTeam(String newModuleTeam) {
+        this.moduleTeam = newModuleTeam;
     }
 
-    public String getCohort() {
-        return cohort;
-    }
-
-    public void setCohort(String cohort) {
-        this.cohort = cohort;
-    }
-
-    public String talk(String language){
-        return "I love " + language;
-    }
 }

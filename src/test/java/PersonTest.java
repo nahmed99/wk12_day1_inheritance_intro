@@ -36,6 +36,6 @@ public class PersonTest {
 
     @Test
     public void canTalk(){
-        assertEquals("I like Java", person.talk("Java"));
+        assertEquals("I love Java", person.talk("Java"));
     }
 }
